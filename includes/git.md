@@ -13,6 +13,10 @@ Leverage specialized agents from `~/.claude/agents/` for version control work:
 
 **IMPORTANT**: For any multi-branch work, feature development, or parallel task handling, **always use the `worktree-manager` skill**. This is the ONLY approved method for managing git worktrees.
 
+### Worktree Directory Discipline
+
+**NEVER** write files to the source repo when operating inside a worktree. Before any file operation, verify `pwd`. If in a worktree path, ALL writes must target that path. See `cs-plugin` include for full details.
+
 ### When to Use worktree-manager
 - Working on a feature while needing to hotfix another branch
 - Reviewing PRs while continuing development
