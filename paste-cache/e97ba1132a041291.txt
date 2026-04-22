@@ -1,0 +1,165 @@
+# Obsidian Vault Bootstrap — Organize My Second Brain
+
+You are helping me transform this Obsidian vault into a practical AI-assisted second brain.
+
+You are operating inside the vault root. Read the project instructions in `CLAUDE.md` first and follow them strictly.
+
+## Mission
+
+Help me turn this vault into a stable personal second-brain system with these layers:
+
+1. **Raw memory**
+   - Daily notes
+   - Inbox / fleeting captures
+   - Imported conversations
+   - Resources and source files
+
+2. **Digest / review memory**
+   - Daily digests
+   - Weekly reviews
+   - Topic digests
+   - Conversation crystallizations
+
+3. **Canonical wiki memory**
+   - Stable project notes
+   - Stable area notes
+   - Current-state pages
+   - Decisions
+   - Experiments
+   - Procedures
+   - Preferences
+
+4. **System layer**
+   - Instructions
+   - Agent rules
+   - Templates
+   - Logs
+   - Workflow definitions
+
+The vault should become a salience-weighted memory system:
+- keep raw notes
+- keep old notes
+- do not assume notes should be deleted
+- instead make retrieval better by improving structure, digests, and canonical pages
+
+## High-level principles
+
+- Preserve user-authored content.
+- Do not silently delete or rewrite raw notes.
+- Prefer renaming, moving, linking, and summarizing over destructive edits.
+- Be conservative.
+- Ask before large refactors.
+- Keep a full record of proposed and executed changes.
+- The goal is not aesthetic perfection. The goal is durable usefulness.
+
+## Current target structure
+
+Aim toward this top-level vault structure:
+
+- `00 - Map of Content`
+- `01 - Projects`
+- `02 - Areas`
+- `03 - Inbox`
+- `04 - Resources`
+- `05 - Daily`
+- `06 - Archive`
+- `07 - System`
+- `08 - Reviews`
+
+Where:
+- `03 - Inbox` is for unresolved/raw captures
+- `08 - Reviews` is where AI digests live
+- `01 - Projects` and `02 - Areas` are the canonical AI wiki core
+- `07 - System` contains instructions, rules, templates, and workflow files
+
+## What I want you to do now
+
+### Phase 1 — Inspect only
+Inspect the vault and produce a detailed but practical report.
+
+In this report include:
+
+1. **Top-level diagnosis**
+   - what is already good
+   - what is structurally confusing
+   - what is missing for the target second-brain system
+
+2. **Folder mapping**
+   - which current folders already match the target model
+   - which folders should be renamed
+   - which folders should be repurposed
+   - which folders should be created
+
+3. **File-level cleanup candidates**
+   - obvious naming inconsistencies
+   - obvious typos
+   - obvious stray notes in the wrong place
+   - notes that look duplicated or redundant
+   - notes that seem like canonical notes vs raw notes
+
+4. **Bridge-layer proposal**
+   Propose the structure for:
+   - `08 - Reviews/Daily Digests`
+   - `08 - Reviews/Weekly Reviews`
+   - `08 - Reviews/Topic Digests`
+   - `08 - Reviews/Conversation Crystallizations`
+
+5. **Canonical wiki proposal**
+   Propose the first 10–15 canonical notes that should serve as the AI wiki core for this vault.
+   For each proposed note, explain:
+   - why it matters
+   - where it should live
+   - which existing notes should feed into it
+
+6. **Safe cleanup batch**
+   Propose the first safe set of changes that can be made with low risk.
+   This batch should include only:
+   - creating missing folders
+   - very obvious renames
+   - moving clearly misplaced files
+   - no major content rewrites
+
+### Phase 2 — Wait
+After the inspection report, STOP and wait for my approval.
+
+Do not make changes yet unless I explicitly approve them.
+
+## Rules for classification
+
+When you inspect notes, think in terms of these note roles:
+
+- `raw` = unprocessed capture, daily note, fleeting thought, messy source
+- `digest` = AI/human summary or crystallization of raw material
+- `canonical` = durable, current, high-signal note
+- `decision` = an important concluded choice worth remembering
+- `experiment` = an ongoing or completed trial with observations
+- `procedure` = repeatable steps or workflow
+- `system` = instructions about how the vault itself works
+
+You do not need to apply metadata yet unless I ask. Just reason using these categories.
+
+## What NOT to do
+
+- Do not delete old notes
+- Do not archive aggressively
+- Do not rewrite large amounts of content
+- Do not flatten nuanced personal notes into generic summaries
+- Do not create a giant taxonomy explosion
+- Do not move files unless the move is clearly justified
+- Do not create dozens of new notes unless proposed first
+
+## Output format
+
+Return your response in the following sections:
+
+# 1. Executive Summary
+# 2. What Already Works
+# 3. What Is Missing
+# 4. Target Structure Mapping
+# 5. Review Layer Proposal
+# 6. Proposed Canonical AI Wiki Core
+# 7. First Safe Cleanup Batch
+# 8. Open Questions / Risks
+
+Be specific and grounded in the actual vault contents.
+Prefer practical recommendations over theory.

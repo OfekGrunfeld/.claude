@@ -49,6 +49,18 @@ Load the relevant file(s) at the start of any matching task:
 
 ---
 
+## Dotfiles
+
+User has a dotfiles repo at `~/dotfiles`. ALWAYS check it before installing tools or writing configs.
+
+- `~/dotfiles/installation/` — install scripts per tool
+- `~/dotfiles/<tool>/` — configs managed by `stow`
+- `install.sh` orchestrates: apt → tools → fonts → stow → snap → flatpak → gnome
+
+**Before installing anything:** `ls ~/dotfiles/<tool>` and `grep -r <tool> ~/dotfiles/installation/`
+
+---
+
 ## META — Maintaining This Document
 
 After a mistake: *"Reflect on this mistake. Abstract and generalize. Write it to CLAUDE.md."*

@@ -1,0 +1,22 @@
+After that, use the project subagent explicitly with:
+
+Use the vault-organizer agent to inspect this vault and propose the first cleanup batch.
+
+Then, once the plan looks good:
+
+Use the vault-organizer agent to execute only the first safe cleanup batch and then report exactly what changed.
+
+A good rollout order is:
+
+first session: inspect only
+second session: create missing folders and fix obvious naming issues
+third session: build 08 - Reviews
+fourth session: start creating topic digests and canonical updates
+
+A few important notes from Claude Code docs:
+
+CLAUDE.md works best when it is specific, concise, and well structured, and Anthropic suggests targeting under about 200 lines per file for better adherence.
+If you later want Claude to generate a starter project file automatically, /init can do that, but since you already have a custom file, you do not need it right now.
+Hooks live in ~/.claude/settings.json, so that is separate from your vault files; you only need hooks later if you want automation around notifications or workflow events.
+
+My recommendation: start with just the two files above, then give Claude the inspect-only prompt first. That will let it organize the vault without jumping too quickly into destructive changes.
